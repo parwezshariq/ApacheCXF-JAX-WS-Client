@@ -1,0 +1,35 @@
+C:\dev\JAX-WS - Apache CXF>mvn archetype:generate -Dfilter=org.apache.cxf.archetype:
+
+Choose archetype:
+1: remote -> org.apache.cxf.archetype:cxf-jaxrs-service (Simple CXF JAX-RS webapp service using Spring configuration)
+2: remote -> org.apache.cxf.archetype:cxf-jaxws-javafirst (Creates a project for developing a Web service starting from Java code)
+3: remote -> org.apache.cxf.archetype:cxf-jaxws-wsdlfirst (Creates a contract (WSDL)-first CXF web service)
+Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): : 2
+Choose org.apache.cxf.archetype:cxf-jaxws-javafirst version:
+....
+136: 3.2.6
+137: 3.2.7
+Choose a number: 137: 137
+
+Define value for property 'groupId': com.shariqparwez
+Define value for property 'artifactId': apache-cxf-jax-ws-demo
+Define value for property 'version' 1.0-SNAPSHOT: : 1.0-SNAPSHOT
+Define value for property 'package' com.shariqparwez: : com.shariqparwez.cxfdemo
+
+Confirm properties configuration:
+groupId: com.shariqparwez
+artifactId: apache-cxf-jax-ws-demo
+version: 1.0-SNAPSHOT
+package: com.shariqparwez.cxfdemo
+ Y: : Y
+ 
+-------------------------------------------------------------------------------------------------------------------------
+
+http://localhost:8080/apache-cxf-jax-ws-demo/HelloWorld?wsdl
+
+http://localhost:8080/apache-cxf-jax-ws-demo/services/orders?wsdl
+
+http://localhost:8080/apache-cxf-jax-ws-demo-client/processOrderPlacement
+
+
+
